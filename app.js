@@ -80,10 +80,16 @@
          transition: all 0.2s ease;
        }
        
-       input:focus {
-         box-shadow: 0 0 0 3px rgba(180, 62, 18, 0.1);
-       }
-     `;
+        input:focus {
+          box-shadow: 0 0 0 3px rgba(180, 62, 18, 0.1);
+        }
+        
+        @media (min-width: 768px) {
+          #mobile-nav {
+            display: none !important;
+          }
+        }
+      `;
      document.head.appendChild(style);
    },
   
