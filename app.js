@@ -345,10 +345,10 @@
     mobileNav.id = 'mobile-nav';
     mobileNav.className = 'fixed bottom-0 left-0 right-0 bg-white border-t border-market-clay/10 z-40 md:hidden';
     
-    const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     const navItems = [
-      { page: 'home.html', icon: 'lucide:home', label: 'Início' },
+      { page: 'index.html', icon: 'lucide:home', label: 'Início' },
       { page: 'categorias.html', icon: 'lucide:grid-3x3', label: 'Categorias' },
       { page: 'carrinho.html', icon: 'lucide:shopping-bag', label: 'Carrinho', badge: true },
       { page: 'perfil.html', icon: 'lucide:user', label: 'Perfil' }
@@ -357,7 +357,7 @@
     mobileNav.innerHTML = `
       <div class="flex items-center justify-around py-3 px-2">
         ${navItems.map(item => {
-          const isActive = currentPage === item.page || (item.page === 'home.html' && currentPage === '');
+          const isActive = currentPage === item.page || (item.page === 'index.html' && currentPage === '');
           return `
             <a href="${item.page}" class="flex flex-col items-center gap-1 px-4 py-1 relative ${isActive ? 'text-market-clay' : 'text-muted-foreground'} transition-colors">
               <iconify-icon icon="${item.icon}" class="size-5"></iconify-icon>
@@ -374,10 +374,10 @@
   },
   
   highlightCurrentPage() {
-    const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('a[href]').forEach(link => {
       const href = link.getAttribute('href');
-      if (href === currentPage || (href === 'home.html' && currentPage === '')) {
+      if (href === currentPage || (href === 'index.html' && currentPage === '')) {
         link.classList.add('text-market-yellow', 'font-bold');
       }
     });
