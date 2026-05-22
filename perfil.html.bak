@@ -1,7 +1,9 @@
 <div
   class="export-wrapper"
   style="
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     min-height: 812px;
     position: relative;
     font-family: var(--font-family-body);
@@ -402,9 +404,6 @@
           .mt-1 {
             margin-top: calc(var(--spacing) * 1);
           }
-          .mt-1\.5 {
-            margin-top: calc(var(--spacing) * 1.5);
-          }
           .mt-2 {
             margin-top: calc(var(--spacing) * 2);
           }
@@ -570,9 +569,6 @@
           }
           .w-4 {
             width: calc(var(--spacing) * 4);
-          }
-          .w-6 {
-            width: calc(var(--spacing) * 6);
           }
           .w-10 {
             width: calc(var(--spacing) * 10);
@@ -875,9 +871,6 @@
               );
             }
           }
-          .border-market-cream {
-            border-color: var(--color-market-cream);
-          }
           .border-market-yellow {
             border-color: var(--color-market-yellow);
           }
@@ -948,16 +941,6 @@
           }
           .bg-market-clay-light {
             background-color: var(--color-market-clay-light);
-          }
-          .bg-market-clay-light\/20 {
-            background-color: color-mix(in srgb, #fff7ed 20%, transparent);
-            @supports (color: color-mix(in lab, red, red)) {
-              background-color: color-mix(
-                in oklab,
-                var(--color-market-clay-light) 20%,
-                transparent
-              );
-            }
           }
           .bg-market-clay-light\/50 {
             background-color: color-mix(in srgb, #fff7ed 50%, transparent);
@@ -1128,9 +1111,6 @@
           .p-1 {
             padding: calc(var(--spacing) * 1);
           }
-          .p-2\.5 {
-            padding: calc(var(--spacing) * 2.5);
-          }
           .p-3 {
             padding: calc(var(--spacing) * 3);
           }
@@ -1199,9 +1179,6 @@
           }
           .py-20 {
             padding-block: calc(var(--spacing) * 20);
-          }
-          .pt-2 {
-            padding-top: calc(var(--spacing) * 2);
           }
           .pt-3 {
             padding-top: calc(var(--spacing) * 3);
@@ -1454,9 +1431,6 @@
           .text-rose-400 {
             color: var(--color-rose-400);
           }
-          .text-transparent {
-            color: transparent;
-          }
           .text-white {
             color: var(--color-white);
           }
@@ -1593,13 +1567,6 @@
               --tw-duration,
               var(--default-transition-duration)
             );
-          }
-          .hover\:bg-market-clay-light {
-            &:hover {
-              @media (hover: hover) {
-                background-color: var(--color-market-clay-light);
-              }
-            }
           }
           .hover\:bg-market-cream {
             &:hover {
@@ -1840,66 +1807,36 @@
           }
         }
         @media (max-width: 1024px) {
-          .product-detail-grid { grid-template-columns: 1fr !important; }
-          .product-image-col { grid-column: span 12 / span 12 !important; }
-          .product-info-col { grid-column: span 12 / span 12 !important; }
-          .related-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .hero-grid { grid-template-columns: 1fr !important; }
+          .hero-content { grid-column: span 12 / span 12 !important; }
+          .hero-image { grid-column: span 12 / span 12 !important; }
+          .steps-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .products-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .cta-grid { grid-template-columns: 1fr !important; }
+          .cta-content { grid-column: span 12 / span 12 !important; }
+          .cta-button { grid-column: span 12 / span 12 !important; justify-content: center !important; }
           .footer-grid { grid-template-columns: repeat(2, 1fr) !important; }
           .navbar-search { width: 100% !important; }
           .navbar-container { padding-inline: calc(var(--spacing) * 4) !important; }
           .section-padding { padding-inline: calc(var(--spacing) * 4) !important; padding-block: calc(var(--spacing) * 8) !important; }
         }
-        input:focus { outline: none !important; }
         @media (max-width: 768px) {
-          .product-detail-grid { grid-template-columns: 1fr !important; }
-          .product-image-col { grid-column: span 12 / span 12 !important; }
-          .product-info-col { grid-column: span 12 / span 12 !important; }
-          .related-grid { grid-template-columns: 1fr !important; }
+          .hero-heading { font-size: var(--text-3xl) !important; }
+          .hero-image-card { margin-bottom: calc(var(--spacing) * 8) !important; }
+          .testimonial-card { max-width: 100% !important; position: static !important; }
+          .steps-grid { grid-template-columns: 1fr !important; }
+          .products-grid { grid-template-columns: 1fr !important; }
           .footer-grid { grid-template-columns: 1fr !important; }
-          .section-padding { padding-inline: calc(var(--spacing) * 4) !important; padding-block: calc(var(--spacing) * 8) !important; }
           .navbar-links { display: none !important; }
           .navbar-search { width: 100% !important; }
+          .search-bar { flex-direction: column !important; }
         }
+        input:focus { outline: none !important; }
       </style>
       <link
         rel="preload"
         as="image"
-        href="/api/flow-image/4%3A3%0AHuge%20fresh%20raw%20cassava%20roots%20freshly%20harvested%2C%20earthy%2C%20lying%20on%20a%20traditional%20rustic%20market%20cloth"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href="/api/flow-image/1%3A1%0ACassava%20root%20cut%20in%20half%20showing%20bright%20white%20inside%20flesh%20starch"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href="/api/flow-image/1%3A1%0AA%20heap%20of%20peeled%20fresh%20cassava%20chunks%20in%20water%20bowl"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href="/api/flow-image/1%3A1%0ATraditional%20organic%20basket%20with%20fresh%20tubers%20of%20different%20sizes"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href="/api/flow-image/1%3A1%0AFresh%20whole%20Tilapia%20fish%20lying%20on%20shaved%20ice%20in%20open%20air%20food%20market"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href="/api/flow-image/1%3A1%0AFresh%20green%20juicy%20okra%20pods%20pile"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href="/api/flow-image/1%3A1%0ARoasted%20peanuts%20in%20traditional%20metal%20cups%20or%20small%20basket"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href="/api/flow-image/1%3A1%0AVibrant%20red%20traditional%20palm%20oil%20bottle%20rustic%20background"
+        href="https://storage.googleapis.com/banani-avatars/avatar/female/25-35/African/1"
       />
     </head>
     <body>
@@ -1911,14 +1848,16 @@
             class="bg-market-yellow text-market-dark text-xs py-2.5 px-4 text-center font-bold tracking-wide flex items-center justify-center gap-2"
           >
             <iconify-icon
-              icon="lucide:star"
-              class="block animate-pulse size-[14px]"
+              icon="lucide:shield-check"
+              class="block size-[14px]"
               style="font-size: 14px"
             ></iconify-icon
             ><span
               ><span
-                >PREÇO TRANSPARENTE: Todos os preços incluem taxa de serviço,
-                compra, entrega e margem. Sem surpresas na entrega!</span
+                data-file="/screens/MyAccountDashboardScreen.jsx"
+                data-idx="0"
+                >ÁREA CLIENTE: Acompanhe as suas compras presenciais do Mercado
+                do 30 em tempo real.</span
               ></span
             >
           </div>
@@ -1926,43 +1865,54 @@
             class="w-full py-4 px-8 flex items-center justify-between bg-market-clay text-white border-b border-market-clay/10 navbar-container"
           >
             <div class="flex items-center gap-8">
-              <a
-                href="index.html"
-                class="flex items-center gap-3"
-                data-media-type="banani-button"
+              <a href="home.html" class="flex items-center gap-3" data-media-type="banani-button"
                 ><div
                   class="size-10 rounded-full flex items-center justify-center font-bold text-lg bg-market-yellow text-market-dark"
                 >
-                  <span>FD</span>
+                  <span data-file="/components/Navbar.jsx" data-idx="0"
+                    >FD</span
+                  >
                 </div>
                 <span
                   class="font-headings font-extrabold text-xl tracking-tight"
-                  ><span>Fefa Delivery</span></span
+                  ><span
+                    data-file="/screens/MyAccountDashboardScreen.jsx"
+                    data-idx="1"
+                    >Fefa Delivery</span
+                  ></span
                 ></a
               >
               <nav
                 class="hidden md:flex items-center gap-6 font-medium text-sm navbar-links"
               >
                 <a
+                  href="home.html"
                   class="text-white/90 hover:text-white"
                   data-media-type="banani-button"
-                  href="index.html"
-                  ><span>Mercado do 30</span></a
+                  ><span data-file="/components/Navbar.jsx" data-idx="1"
+                    >Mercado do 30</span
+                  ></a
                 ><a
-                  class="text-white/90 hover:text-white"
-                  data-media-type="banani-button"
                   href="entregas.html"
-                  ><span>Como Funciona</span></a
-                ><a
                   class="text-white/90 hover:text-white"
                   data-media-type="banani-button"
+                  ><span data-file="/components/Navbar.jsx" data-idx="2"
+                    >Como Funciona</span
+                  ></a
+                ><a
                   href="categorias.html"
-                  ><span>Categorias</span></a
-                ><a
                   class="text-white/90 hover:text-white"
                   data-media-type="banani-button"
+                  ><span data-file="/components/Navbar.jsx" data-idx="3"
+                    >Categorias</span
+                  ></a
+                ><a
                   href="precos.html"
-                  ><span>Preços</span></a
+                  class="text-white/90 hover:text-white"
+                  data-media-type="banani-button"
+                  ><span data-file="/components/Navbar.jsx" data-idx="4"
+                    >Preços</span
+                  ></a
                 >
               </nav>
             </div>
@@ -1975,11 +1925,7 @@
                   class="block size-[16px]"
                   style="font-size: 16px"
                 ></iconify-icon>
-                <input
-                  type="text"
-                  placeholder="O que procuras do Mercado do 30?"
-                  class="bg-transparent outline-none w-full text-white placeholder-white/60 text-sm"
-                />
+                <input type="text" placeholder="O que procuras do Mercado do 30?" class="bg-transparent outline-none w-full text-white placeholder-white/60 text-sm" />
               </div>
               <a
                 href="carrinho.html"
@@ -1992,12 +1938,13 @@
                   style="font-size: 20px"
                 ></iconify-icon
                 ><span
-                  data-cart-badge
                   class="absolute -top-1 -right-1 bg-market-yellow text-market-dark text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center"
-                  ><span>3</span></span
+                  ><span data-file="/components/Navbar.jsx" data-idx="6"
+                    >3</span
+                  ></span
                 ></a
-              >              <a
-                href="login.html"
+              ><a
+                href="perfil.html"
                 class="bg-market-yellow text-market-dark font-semibold px-4 py-2 rounded-lg flex items-center gap-2"
                 data-media-type="banani-button"
               >
@@ -2006,519 +1953,436 @@
                   class="block size-[16px]"
                   style="font-size: 16px"
                 ></iconify-icon
-                ><span><span>Minha Conta</span></span>
+                ><span
+                  ><span data-file="/components/Navbar.jsx" data-idx="7"
+                    >Minha Conta</span
+                  ></span
+                >
               </a>
             </div>
           </div>
           <div class="max-w-7xl mx-auto px-12 py-12 section-padding">
-            <!-- BREADCRUMB -->
-            <div class="flex items-center gap-2 text-xs text-muted-foreground mb-8">
-              <a href="index.html" class="hover:underline"><span>Início</span></a>
-              <iconify-icon icon="lucide:chevron-right" class="block size-[12px]"></iconify-icon>
-              <a href="categorias.html" class="hover:underline"><span>Categorias</span></a>
-              <iconify-icon icon="lucide:chevron-right" class="block size-[12px]"></iconify-icon>
-              <span class="hover:underline"><span data-detail="breadcrumb-category">Produtos da Terra</span></span>
-              <iconify-icon icon="lucide:chevron-right" class="block size-[12px]"></iconify-icon>
-              <span class="text-market-clay font-bold"><span data-detail="breadcrumb-name">Mandioca Fresca do Bengo</span></span>
-            </div>
-            
-            <!-- MAIN PRODUCT GRID -->
-            <div class="grid grid-cols-12 gap-12 bg-white p-8 rounded-3xl border border-market-clay/10 shadow-sm items-start mb-16 product-detail-grid">
-              <!-- IMAGES COLUMN -->
-              <div class="col-span-6 flex flex-col gap-4 product-image-col">
-                <div class="rounded-2xl overflow-hidden border-2 border-market-cream shadow-md">
-                  <img data-detail="main-image" data-aspect-ratio="4:3" style="aspect-ratio: 4/3" 
-                    src="https://storage.googleapis.com/banani-generated-images/generated-images/648069cc-df93-4603-85d2-840e26601007.jpg" 
-                    class="w-full object-cover" />
-                </div>
-                <div class="grid grid-cols-3 gap-4">
-                  <div class="rounded-xl overflow-hidden border border-market-clay/15">
-                    <img data-aspect-ratio="1:1" style="aspect-ratio: 1/1"
-                      src="https://storage.googleapis.com/banani-generated-images/generated-images/108c4f7a-e017-42a2-a808-abb9a74130fb.jpg"
-                      class="w-full object-cover" />
-                  </div>
-                  <div class="rounded-xl overflow-hidden border border-market-clay/15">
-                    <img data-aspect-ratio="1:1" style="aspect-ratio: 1/1"
-                      src="https://storage.googleapis.com/banani-generated-images/generated-images/db6b14e0-fa9c-47b3-bfb6-876907dfa55c.jpg"
-                      class="w-full h-full object-cover" />
-                  </div>
-                  <div class="rounded-xl overflow-hidden border border-market-clay/15">
-                    <img data-aspect-ratio="1:1" style="aspect-ratio: 1/1"
-                      src="https://storage.googleapis.com/banani-generated-images/generated-images/7fdc6930-757d-4297-9d82-66996937cc6e.jpg"
-                      class="w-full h-full object-cover" />
-                  </div>
-                </div>
-              </div>
-              
-              <!-- PRODUCT INFO COLUMN -->
-              <div class="col-span-6 flex flex-col gap-6 product-info-col">
-                <div>
-                  <span class="text-xs font-bold text-market-clay uppercase tracking-widest">
-                    <span data-detail="category-badge">PRODUTO DA TERRA • BENGO</span>
-                  </span>
-                  <h1 class="font-headings font-black text-3xl text-market-dark mt-1">
-                    <span data-detail="product-name">Mandioca Fresca do Bengo</span>
-                  </h1>
-                  <p class="text-xs text-emerald-600 font-bold mt-1.5 flex items-center gap-1">
-                    <span class="size-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span data-detail="availability">Colhida hoje de madrugada • Disponível no Mercado do 30</span>
+            <div class="grid grid-cols-12 gap-8 items-start">
+              <div class="col-span-4 flex flex-col gap-6">
+                <div
+                  class="bg-white p-6 rounded-3xl border border-market-clay/10 shadow-sm flex flex-col items-center text-center"
+                >
+                  <img
+                    src="https://storage.googleapis.com/banani-avatars/avatar/female/25-35/African/1"
+                    class="w-24 h-24 rounded-full border-4 border-market-yellow shadow-sm mb-4"
+                  />
+                  <h3
+                    class="font-headings font-extrabold text-xl text-market-dark"
+                  >
+                    <span
+                      data-file="/screens/MyAccountDashboardScreen.jsx"
+                      data-idx="2"
+                      >Dona Teresa Gouveia</span
+                    >
+                  </h3>
+                  <p class="text-xs text-muted-foreground">
+                    <span
+                      data-file="/screens/MyAccountDashboardScreen.jsx"
+                      data-idx="3"
+                      >Membro Fefa desde Outubro de 2023</span
+                    >
                   </p>
-                </div>
-                
-                <!-- PRICE BOX -->
-                <div class="bg-market-cream/40 p-5 rounded-2xl border border-market-clay/10">
-                  <div class="flex items-baseline gap-2">
-                    <span class="font-headings font-black text-3xl text-market-clay">
-                      <span data-detail="product-price">1.800 Kz</span>
-                    </span>
-                    <span class="text-sm text-muted-foreground font-bold">
-                      <span data-detail="product-unit">/ Kg</span>
-                    </span>
-                  </div>
-                  <div class="flex items-center gap-1.5 text-xs text-muted-foreground mt-2 border-t border-market-clay/10 pt-3">
-                    <iconify-icon icon="lucide:shield-check" class="block text-emerald-600 size-[14px]"></iconify-icon>
-                    <span>Preço Integrado: sem taxas adicionais de entrega ou serviço no checkout.</span>
-                  </div>
-                </div>
-                
-                <!-- PREPARATION OPTIONS -->
-                <div>
-                  <span class="text-xs font-bold text-market-dark/80 block mb-2">Como prefere a sua Mandioca?</span>
-                  <div class="grid grid-cols-3 gap-3">
-                    <button class="border-2 border-market-clay bg-market-clay-light/20 p-3 rounded-xl text-center">
-                      <span class="block text-xs font-bold text-market-clay">Inteira com Casca</span>
-                      <span class="text-[10px] text-muted-foreground">Mais durabilidade</span>
-                    </button>
-                    <button class="border border-market-clay/15 p-3 rounded-xl text-center bg-white">
-                      <span class="block text-xs font-bold text-market-dark">Descascada</span>
-                      <span class="text-[10px] text-muted-foreground">Pronta a cozinhar</span>
-                    </button>
-                    <button class="border border-market-clay/15 p-3 rounded-xl text-center bg-white">
-                      <span class="block text-xs font-bold text-market-dark">Cortada em Cubos</span>
-                      <span class="text-[10px] text-muted-foreground">No saco térmico</span>
-                    </button>
-                  </div>
-                </div>
-                
-                <!-- QUANTITY + ADD TO CART -->
-                <div class="flex items-center gap-4">
-                  <div class="flex flex-col gap-1">
-                    <span class="text-[11px] font-bold text-muted-foreground">Quantidade:</span>
-                    <div class="border border-market-clay/15 rounded-xl p-2.5 flex items-center gap-4 bg-market-cream/30">
-                      <button data-detail="qty-minus" class="size-6 rounded-lg bg-white flex items-center justify-center font-bold text-market-clay hover:bg-market-clay-light">-</button>
-                      <span class="font-bold text-sm text-market-dark w-6 text-center"><span data-detail="quantity">1</span></span>
-                      <button data-detail="qty-plus" class="size-6 rounded-lg bg-white flex items-center justify-center font-bold text-market-clay hover:bg-market-clay-light">+</button>
-                    </div>
-                  </div>
-                  <div class="flex-1 flex flex-col gap-1">
-                    <span class="text-[11px] text-transparent">Ação</span>
-                    <button data-detail="add-to-cart-btn" class="w-full bg-market-clay text-white font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-md">
-                      <iconify-icon icon="lucide:shopping-cart" class="block size-[16px]"></iconify-icon>
-                      <span><span data-detail="add-to-cart-text">Adicionar à Cesta (1.800 Kz)</span></span>
-                    </button>
-                  </div>
-                </div>
-                
-                <!-- PRODUCT DETAILS -->
-                <div class="border-t border-market-clay/10 pt-4 space-y-3">
-                  <div>
-                    <h4 class="text-xs font-bold text-market-dark">Sobre este produto:</h4>
-                    <p class="text-xs text-muted-foreground leading-relaxed mt-1">
-                      <span data-detail="description">A mandioca do Bengo é famosa pela sua cozedura rápida e textura incrivelmente macia ("mandioca que se desfaz"). É perfeita para acompanhar peixe Cacusso grelhado, fazer bombó frito, ou preparar fuba fresca de alta qualidade.</span>
-                    </p>
-                  </div>
-                  <div class="grid grid-cols-2 gap-4 text-xs pt-2">
-                    <div>
-                      <span class="text-muted-foreground block">Origem:</span>
-                      <span class="font-bold"><span data-detail="origin">Caxito, Província do Bengo</span></span>
-                    </div>
-                    <div>
-                      <span class="text-muted-foreground block">Tipo de Cultivo:</span>
-                      <span class="font-bold">100% Tradicional / Familiar</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-8">
-              <h3
-                class="font-headings font-extrabold text-2xl text-market-dark"
-              >
-                <span data-file="/screens/new_screen3.jsx" data-idx="29"
-                  >Também comprado com este produto</span
-                >
-              </h3>
-              <p class="text-xs text-muted-foreground mt-1">
-                <span data-file="/screens/new_screen3.jsx" data-idx="30"
-                  >Aproveite a mesma entrega para completar a sua receita típica
-                  angolana.</span
-                >
-              </p>
-            </div>
-            <div class="grid grid-cols-4 gap-6 related-grid">
-              <div
-                class="p-4 flex flex-col justify-between border border-market-clay/10 bg-white rounded-2xl shadow-sm relative"
-              >
-                <div
-                  class="w-full aspect-square rounded-lg overflow-hidden mb-3 bg-muted relative"
-                >
-                  <img
-                    data-query="Fresh whole Tilapia fish lying on shaved ice in open air food market"
-                    data-aspect-ratio="1:1"
-                    style="aspect-ratio: 1/1"
-                    src="https://storage.googleapis.com/banani-generated-images/generated-images/431aba18-c6c2-40b5-b5ab-88c3b6c90d5f.jpg"
-                    class="w-full h-full object-cover"
-                  /><span
-                    class="absolute top-2 left-2 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider bg-market-clay/10 text-market-clay"
-                    ><span data-file="/screens/new_screen3.jsx" data-idx="32"
-                      >Peixaria</span
-                    ></span
+                  <div
+                    class="bg-market-clay-light text-market-clay text-xs font-bold px-3 py-1.5 rounded-full mt-3 flex items-center gap-1"
                   >
-                </div>
-                <div class="flex-1 flex flex-col justify-between">
-                  <div>
-                    <h4
-                      class="font-headings font-bold text-base text-foreground line-clamp-2 leading-snug"
+                    <iconify-icon
+                      icon="lucide:medal"
+                      class="block size-[12px]"
+                      style="font-size: 12px"
+                    ></iconify-icon
+                    ><span
+                      ><span
+                        data-file="/screens/MyAccountDashboardScreen.jsx"
+                        data-idx="4"
+                        >Cliente Bronze • 5 Pedidos</span
+                      ></span
                     >
-                      <span data-file="/screens/new_screen3.jsx" data-idx="31"
-                        >Cacusso Fresco do Dia</span
-                      >
-                    </h4>
-                    <p class="text-xs text-muted-foreground mt-1">
-                      <span data-file="/components/ProductCard.jsx" data-idx="0"
-                        >Unidade de venda:
-                      </span>
-                      <span class="font-semibold"
-                        ><span
-                          data-file="/screens/new_screen3.jsx"
-                          data-idx="34"
-                          >Kg</span
-                        ></span
-                      >
-                    </p>
                   </div>
                   <div
-                    class="mt-4 pt-3 border-t border-dashed border-border flex items-end justify-between"
+                    class="grid grid-cols-2 gap-4 w-full mt-6 pt-6 border-t border-market-clay/10"
                   >
+                    <div class="text-center">
+                      <span class="text-xs text-muted-foreground block"
+                        ><span
+                          data-file="/screens/MyAccountDashboardScreen.jsx"
+                          data-idx="5"
+                          >Economizado</span
+                        ></span
+                      ><span class="text-sm font-bold text-emerald-600"
+                        ><span
+                          data-file="/screens/MyAccountDashboardScreen.jsx"
+                          data-idx="6"
+                          >6.500 Kz</span
+                        ></span
+                      >
+                    </div>
+                    <div class="text-center border-l border-market-clay/10">
+                      <span class="text-xs text-muted-foreground block"
+                        ><span
+                          data-file="/screens/MyAccountDashboardScreen.jsx"
+                          data-idx="7"
+                          >Produtos do 30</span
+                        ></span
+                      ><span class="text-sm font-bold text-market-dark"
+                        ><span
+                          data-file="/screens/MyAccountDashboardScreen.jsx"
+                          data-idx="8"
+                          >24 Itens</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-white p-4 rounded-3xl border border-market-clay/10 shadow-sm flex flex-col gap-1"
+                >
+                  <button
+                    class="flex items-center gap-3 p-3 rounded-xl bg-market-clay text-white font-bold text-sm text-left"
+                    data-media-type="banani-button"
+                  >
+                    <iconify-icon
+                      icon="lucide:shopping-bag"
+                      class="block size-[18px]"
+                      style="font-size: 18px"
+                    ></iconify-icon
+                    ><span
+                      ><span
+                        data-file="/screens/MyAccountDashboardScreen.jsx"
+                        data-idx="9"
+                        >Meus Pedidos Activos</span
+                      ></span
+                    ></button
+                  ><button
+                    class="flex items-center gap-3 p-3 rounded-xl hover:bg-market-cream text-market-dark/80 text-sm text-left"
+                    data-media-type="banani-button"
+                  >
+                    <iconify-icon
+                      icon="lucide:history"
+                      class="block size-[18px]"
+                      style="font-size: 18px"
+                    ></iconify-icon
+                    ><span
+                      ><span
+                        data-file="/screens/MyAccountDashboardScreen.jsx"
+                        data-idx="10"
+                        >Histórico de Compras</span
+                      ></span
+                    ></button
+                  ><button
+                    class="flex items-center gap-3 p-3 rounded-xl hover:bg-market-cream text-market-dark/80 text-sm text-left"
+                    data-media-type="banani-button"
+                  >
+                    <iconify-icon
+                      icon="lucide:map-pin"
+                      class="block size-[18px]"
+                      style="font-size: 18px"
+                    ></iconify-icon
+                    ><span
+                      ><span
+                        data-file="/screens/MyAccountDashboardScreen.jsx"
+                        data-idx="11"
+                        >Endereços Guardados</span
+                      ></span
+                    ></button
+                  ><a href="#definicoes"
+                    class="flex items-center gap-3 p-3 rounded-xl hover:bg-market-cream text-market-dark/80 text-sm text-left"
+                    data-media-type="banani-button"
+                  >
+                    <iconify-icon
+                      icon="lucide:settings"
+                      class="block size-[18px]"
+                      style="font-size: 18px"
+                    ></iconify-icon
+                    ><span
+                      ><span
+                        data-file="/screens/MyAccountDashboardScreen.jsx"
+                        data-idx="12"
+                        >Definições de Conta</span
+                      ></span
+                    >
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-8 flex flex-col gap-6">
+                <div
+                  class="bg-white p-8 rounded-3xl border border-market-clay/10 shadow-sm"
+                >
+                  <div class="flex justify-between items-start mb-6">
                     <div>
+                      <span
+                        class="text-xs font-bold text-market-clay uppercase tracking-widest"
+                        ><span
+                          data-file="/screens/MyAccountDashboardScreen.jsx"
+                          data-idx="13"
+                          >ACOMPANHAMENTO AO VIVO</span
+                        ></span
+                      >
+                      <h3
+                        class="font-headings font-black text-2xl text-market-dark mt-1"
+                      >
+                        <span
+                          data-file="/screens/MyAccountDashboardScreen.jsx"
+                          data-idx="14"
+                          >Pedido Activo #3024</span
+                        >
+                      </h3>
+                      <p class="text-xs text-muted-foreground mt-0.5">
+                        <span
+                          data-file="/screens/MyAccountDashboardScreen.jsx"
+                          data-idx="15"
+                          >Comprador Presencial: António Gouveia • Iniciado às
+                          08:32</span
+                        >
+                      </p>
+                    </div>
+                    <span
+                      class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+                      ><span
+                        data-file="/screens/MyAccountDashboardScreen.jsx"
+                        data-idx="16"
+                        >Em Trânsito</span
+                      ></span
+                    >
+                  </div>
+                  <div class="grid grid-cols-4 gap-4 mb-8 relative">
+                    <div
+                      class="flex flex-col items-center text-center gap-2 relative"
+                    >
                       <div
-                        class="flex items-center gap-1 text-[10px] text-emerald-600 font-semibold mb-0.5"
+                        class="size-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-sm shadow"
                       >
                         <iconify-icon
-                          icon="lucide:check-circle"
-                          class="block size-[10px]"
-                          style="font-size: 10px"
-                        ></iconify-icon
-                        ><span
+                          icon="lucide:check"
+                          class="block size-[18px]"
+                          style="font-size: 18px"
+                        ></iconify-icon>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-xs text-market-dark">
+                          <span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="17"
+                            >Lista Recebida</span
+                          >
+                        </h4>
+                        <p class="text-[10px] text-muted-foreground">
+                          <span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="18"
+                            >08:35</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col items-center text-center gap-2 relative"
+                    >
+                      <div
+                        class="size-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-sm shadow"
+                      >
+                        <iconify-icon
+                          icon="lucide:check"
+                          class="block size-[18px]"
+                          style="font-size: 18px"
+                        ></iconify-icon>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-xs text-market-dark">
+                          <span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="19"
+                            >Compra no Mercado</span
+                          >
+                        </h4>
+                        <p class="text-[10px] text-muted-foreground">
+                          <span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="20"
+                            >09:12</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col items-center text-center gap-2 relative"
+                    >
+                      <div
+                        class="size-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-sm shadow animate-pulse"
+                      >
+                        <iconify-icon
+                          icon="lucide:truck"
+                          class="block size-[18px]"
+                          style="font-size: 18px"
+                        ></iconify-icon>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-xs text-emerald-600">
+                          <span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="21"
+                            >A Caminho de Talatona</span
+                          >
+                        </h4>
+                        <p class="text-[10px] text-muted-foreground">
+                          <span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="22"
+                            >Previsão: 10:45</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col items-center text-center gap-2 relative opacity-40"
+                    >
+                      <div
+                        class="size-10 rounded-full bg-market-clay-light text-market-clay flex items-center justify-center font-bold text-sm"
+                      >
+                        <iconify-icon
+                          icon="lucide:home"
+                          class="block size-[18px]"
+                          style="font-size: 18px"
+                        ></iconify-icon>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-xs text-market-dark">
+                          <span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="23"
+                            >Entregue</span
+                          >
+                        </h4>
+                        <p class="text-[10px] text-muted-foreground">
+                          <span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="24"
+                            >--:--</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-market-cream/40 p-5 rounded-2xl border border-market-clay/10"
+                  >
+                    <h4 class="font-bold text-sm text-market-clay mb-3">
+                      <span
+                        data-file="/screens/MyAccountDashboardScreen.jsx"
+                        data-idx="25"
+                        >Resumo dos Frescos Comprados Hoje:</span
+                      >
+                    </h4>
+                    <div class="divide-y divide-market-clay/10 text-sm">
+                      <div class="py-2.5 flex justify-between">
+                        <span
                           ><span
-                            data-file="/components/ProductCard.jsx"
-                            data-idx="1"
-                            >Preço Final (Tudo Incluído)</span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="26"
+                            >2 Kg Mandioca Fresca Bengo</span
+                          ></span
+                        ><span class="font-bold"
+                          ><span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="27"
+                            >3.600 Kz</span
                           ></span
                         >
                       </div>
-                      <div class="flex items-baseline gap-1">
+                      <div class="py-2.5 flex justify-between">
                         <span
-                          class="font-headings font-extrabold text-lg text-foreground"
                           ><span
-                            data-file="/screens/new_screen3.jsx"
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="28"
+                            >1 Cesto de Tomate Redondo</span
+                          ></span
+                        ><span class="font-bold"
+                          ><span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="29"
+                            >1.500 Kz</span
+                          ></span
+                        >
+                      </div>
+                      <div class="py-2.5 flex justify-between">
+                        <span
+                          ><span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="30"
+                            >2 Kg Cacusso Fresco</span
+                          ></span
+                        ><span class="font-bold"
+                          ><span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="31"
+                            >9.000 Kz</span
+                          ></span
+                        >
+                      </div>
+                      <div
+                        class="py-3 flex justify-between items-baseline pt-4 border-t border-dashed border-market-clay/20 font-bold"
+                      >
+                        <span class="text-market-clay"
+                          ><span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="32"
+                            >Total Pago (Com todas as taxas incluídas)</span
+                          ></span
+                        ><span class="text-lg text-market-dark"
+                          ><span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
                             data-idx="33"
-                            >4.500 Kz</span
+                            >14.100 Kz</span
                           ></span
                         >
                       </div>
                     </div>
-                    <button
-                      class="bg-market-clay text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5"
-                      data-media-type="banani-button"
-                    >
-                      <iconify-icon
-                        icon="lucide:plus"
-                        class="block size-[14px]"
-                        style="font-size: 14px"
-                      ></iconify-icon
-                      ><span
-                        ><span
-                          data-file="/components/ProductCard.jsx"
-                          data-idx="2"
-                          >Pedir</span
-                        ></span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="p-4 flex flex-col justify-between border border-market-clay/10 bg-white rounded-2xl shadow-sm relative"
-              >
-                <div
-                  class="w-full aspect-square rounded-lg overflow-hidden mb-3 bg-muted relative"
-                >
-                  <img
-                    data-query="Fresh green juicy okra pods pile"
-                    data-aspect-ratio="1:1"
-                    style="aspect-ratio: 1/1"
-                    src="https://storage.googleapis.com/banani-generated-images/generated-images/3e96fa72-b556-4090-894f-1396ad0937fb.jpg"
-                    class="w-full h-full object-cover"
-                  /><span
-                    class="absolute top-2 left-2 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider bg-market-clay/10 text-market-clay"
-                    ><span data-file="/screens/new_screen3.jsx" data-idx="36"
-                      >Produtos da Terra</span
-                    ></span
-                  >
-                </div>
-                <div class="flex-1 flex flex-col justify-between">
-                  <div>
-                    <h4
-                      class="font-headings font-bold text-base text-foreground line-clamp-2 leading-snug"
-                    >
-                      <span data-file="/screens/new_screen3.jsx" data-idx="35"
-                        >Quiabo Fresco Nacional</span
-                      >
-                    </h4>
-                    <p class="text-xs text-muted-foreground mt-1">
-                      <span data-file="/components/ProductCard.jsx" data-idx="0"
-                        >Unidade de venda:
-                      </span>
-                      <span class="font-semibold"
-                        ><span
-                          data-file="/screens/new_screen3.jsx"
-                          data-idx="38"
-                          >Kg</span
-                        ></span
-                      >
-                    </p>
                   </div>
                   <div
-                    class="mt-4 pt-3 border-t border-dashed border-border flex items-end justify-between"
+                    class="mt-6 p-4 bg-market-yellow-light/20 border border-market-yellow rounded-2xl flex items-center justify-between"
                   >
-                    <div>
-                      <div
-                        class="flex items-center gap-1 text-[10px] text-emerald-600 font-semibold mb-0.5"
-                      >
-                        <iconify-icon
-                          icon="lucide:check-circle"
-                          class="block size-[10px]"
-                          style="font-size: 10px"
-                        ></iconify-icon
-                        ><span
-                          ><span
-                            data-file="/components/ProductCard.jsx"
-                            data-idx="1"
-                            >Preço Final (Tudo Incluído)</span
-                          ></span
-                        >
-                      </div>
-                      <div class="flex items-baseline gap-1">
-                        <span
-                          class="font-headings font-extrabold text-lg text-foreground"
-                          ><span
-                            data-file="/screens/new_screen3.jsx"
-                            data-idx="37"
-                            >1.100 Kz</span
-                          ></span
-                        >
+                    <div class="flex items-center gap-3">
+                      <iconify-icon
+                        icon="lucide:message-square"
+                        class="block text-amber-600 size-[24px]"
+                        style="font-size: 24px"
+                      ></iconify-icon>
+                      <div>
+                        <h5 class="font-bold text-xs text-market-dark">
+                          <span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="34"
+                            >Fale com o Comprador António</span
+                          >
+                        </h5>
+                        <p class="text-[11px] text-muted-foreground">
+                          <span
+                            data-file="/screens/MyAccountDashboardScreen.jsx"
+                            data-idx="35"
+                            >Caso precise de pedir mais algum produto de última
+                            hora diretamente do 30.</span
+                          >
+                        </p>
                       </div>
                     </div>
                     <button
-                      class="bg-market-clay text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5"
+                      class="bg-market-yellow text-market-dark font-bold text-xs px-4 py-2 rounded-xl flex items-center gap-1.5 shadow-sm"
                       data-media-type="banani-button"
                     >
                       <iconify-icon
-                        icon="lucide:plus"
+                        icon="lucide:phone-call"
                         class="block size-[14px]"
                         style="font-size: 14px"
                       ></iconify-icon
                       ><span
                         ><span
-                          data-file="/components/ProductCard.jsx"
-                          data-idx="2"
-                          >Pedir</span
-                        ></span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="p-4 flex flex-col justify-between border border-market-clay/10 bg-white rounded-2xl shadow-sm relative"
-              >
-                <div
-                  class="w-full aspect-square rounded-lg overflow-hidden mb-3 bg-muted relative"
-                >
-                  <img
-                    data-query="Roasted peanuts in traditional metal cups or small basket"
-                    data-aspect-ratio="1:1"
-                    style="aspect-ratio: 1/1"
-                    src="https://storage.googleapis.com/banani-generated-images/generated-images/7394deb5-d5e9-4cad-a72d-4d478ba1b891.jpg"
-                    class="w-full h-full object-cover"
-                  /><span
-                    class="absolute top-2 left-2 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider bg-market-clay/10 text-market-clay"
-                    ><span data-file="/screens/new_screen3.jsx" data-idx="40"
-                      >Produtos da Terra</span
-                    ></span
-                  >
-                </div>
-                <div class="flex-1 flex flex-col justify-between">
-                  <div>
-                    <h4
-                      class="font-headings font-bold text-base text-foreground line-clamp-2 leading-snug"
-                    >
-                      <span data-file="/screens/new_screen3.jsx" data-idx="39"
-                        >Ginguba Torrada do Dia</span
-                      >
-                    </h4>
-                    <p class="text-xs text-muted-foreground mt-1">
-                      <span data-file="/components/ProductCard.jsx" data-idx="0"
-                        >Unidade de venda:
-                      </span>
-                      <span class="font-semibold"
-                        ><span
-                          data-file="/screens/new_screen3.jsx"
-                          data-idx="42"
-                          >Lata</span
-                        ></span
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="mt-4 pt-3 border-t border-dashed border-border flex items-end justify-between"
-                  >
-                    <div>
-                      <div
-                        class="flex items-center gap-1 text-[10px] text-emerald-600 font-semibold mb-0.5"
-                      >
-                        <iconify-icon
-                          icon="lucide:check-circle"
-                          class="block size-[10px]"
-                          style="font-size: 10px"
-                        ></iconify-icon
-                        ><span
-                          ><span
-                            data-file="/components/ProductCard.jsx"
-                            data-idx="1"
-                            >Preço Final (Tudo Incluído)</span
-                          ></span
-                        >
-                      </div>
-                      <div class="flex items-baseline gap-1">
-                        <span
-                          class="font-headings font-extrabold text-lg text-foreground"
-                          ><span
-                            data-file="/screens/new_screen3.jsx"
-                            data-idx="41"
-                            >950 Kz</span
-                          ></span
-                        >
-                      </div>
-                    </div>
-                    <button
-                      class="bg-market-clay text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5"
-                      data-media-type="banani-button"
-                    >
-                      <iconify-icon
-                        icon="lucide:plus"
-                        class="block size-[14px]"
-                        style="font-size: 14px"
-                      ></iconify-icon
-                      ><span
-                        ><span
-                          data-file="/components/ProductCard.jsx"
-                          data-idx="2"
-                          >Pedir</span
-                        ></span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="p-4 flex flex-col justify-between border border-market-clay/10 bg-white rounded-2xl shadow-sm relative"
-              >
-                <div
-                  class="w-full aspect-square rounded-lg overflow-hidden mb-3 bg-muted relative"
-                >
-                  <img
-                    data-query="Vibrant red traditional palm oil bottle rustic background"
-                    data-aspect-ratio="1:1"
-                    style="aspect-ratio: 1/1"
-                    src="https://storage.googleapis.com/banani-generated-images/generated-images/298e57fc-250c-4d91-9d93-e0545c6cbea0.jpg"
-                    class="w-full h-full object-cover"
-                  /><span
-                    class="absolute top-2 left-2 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider bg-market-clay/10 text-market-clay"
-                    ><span data-file="/screens/new_screen3.jsx" data-idx="44"
-                      >Produtos da Terra</span
-                    ></span
-                  >
-                </div>
-                <div class="flex-1 flex flex-col justify-between">
-                  <div>
-                    <h4
-                      class="font-headings font-bold text-base text-foreground line-clamp-2 leading-snug"
-                    >
-                      <span data-file="/screens/new_screen3.jsx" data-idx="43"
-                        >Óleo de Palma do Uíge</span
-                      >
-                    </h4>
-                    <p class="text-xs text-muted-foreground mt-1">
-                      <span data-file="/components/ProductCard.jsx" data-idx="0"
-                        >Unidade de venda:
-                      </span>
-                      <span class="font-semibold"
-                        ><span
-                          data-file="/screens/new_screen3.jsx"
-                          data-idx="46"
-                          >Litro</span
-                        ></span
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="mt-4 pt-3 border-t border-dashed border-border flex items-end justify-between"
-                  >
-                    <div>
-                      <div
-                        class="flex items-center gap-1 text-[10px] text-emerald-600 font-semibold mb-0.5"
-                      >
-                        <iconify-icon
-                          icon="lucide:check-circle"
-                          class="block size-[10px]"
-                          style="font-size: 10px"
-                        ></iconify-icon
-                        ><span
-                          ><span
-                            data-file="/components/ProductCard.jsx"
-                            data-idx="1"
-                            >Preço Final (Tudo Incluído)</span
-                          ></span
-                        >
-                      </div>
-                      <div class="flex items-baseline gap-1">
-                        <span
-                          class="font-headings font-extrabold text-lg text-foreground"
-                          ><span
-                            data-file="/screens/new_screen3.jsx"
-                            data-idx="45"
-                            >2.200 Kz</span
-                          ></span
-                        >
-                      </div>
-                    </div>
-                    <button
-                      class="bg-market-clay text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5"
-                      data-media-type="banani-button"
-                    >
-                      <iconify-icon
-                        icon="lucide:plus"
-                        class="block size-[14px]"
-                        style="font-size: 14px"
-                      ></iconify-icon
-                      ><span
-                        ><span
-                          data-file="/components/ProductCard.jsx"
-                          data-idx="2"
-                          >Pedir</span
+                          data-file="/screens/MyAccountDashboardScreen.jsx"
+                          data-idx="36"
+                          >Ligar / WhatsApp</span
                         ></span
                       >
                     </button>
@@ -2531,10 +2395,12 @@
         <footer
           class="w-full py-12 px-8 bg-market-dark text-white/90 border-t border-white/10"
         >
-          <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 footer-grid">
+          <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 class="font-headings font-extrabold text-xl mb-4">
-                <span data-file="/screens/new_screen3.jsx" data-idx="47"
+                <span
+                  data-file="/screens/MyAccountDashboardScreen.jsx"
+                  data-idx="37"
                   >Fefa Delivery</span
                 >
               </h3>
@@ -2684,83 +2550,7 @@
             </div>
           </div>
         </footer>
-      <script src="data.js"></script>
-      <script src="app.js"></script>
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const params = new URLSearchParams(window.location.search);
-          const productId = params.get('id');
-          if (!productId) return;
-
-          const product = window.JosefaProducts.getById(productId);
-          if (!product) return;
-
-          let quantity = 1;
-          const unit = product.unit || 'Kg';
-          const categoryName = product.category || '';
-          const price = product.price || 0;
-
-          const setText = (attr, value) => {
-            const el = document.querySelector(`[data-detail="${attr}"]`);
-            if (el) el.textContent = value;
-          };
-
-          setText('breadcrumb-category', categoryName);
-          setText('breadcrumb-name', product.name);
-
-          const badgeEl = document.querySelector('[data-detail="category-badge"]');
-          if (badgeEl) {
-            const originPart = product.origin ? ` • ${product.origin.split(',')[0].toUpperCase()}` : '';
-            badgeEl.textContent = `${categoryName.toUpperCase()}${originPart}`;
-          }
-
-          const imgEl = document.querySelector('[data-detail="main-image"]');
-          if (imgEl && product.image) imgEl.src = product.image;
-
-          setText('product-name', product.name);
-          setText('availability', product.stock || 'Disponível hoje');
-          setText('product-price', price.toLocaleString('pt-AO') + ' Kz');
-          setText('product-unit', `/ ${unit}`);
-          setText('description', product.description || '');
-          setText('origin', product.origin || '');
-
-          document.title = `${product.name} - Fefa Delivery`;
-
-          const updateTotal = () => {
-            const total = price * quantity;
-            setText('add-to-cart-text', `Adicionar à Cesta (${total.toLocaleString('pt-AO')} Kz)`);
-          };
-          updateTotal();
-
-          const qtyDisplay = document.querySelector('[data-detail="quantity"]');
-          const qtyMinus = document.querySelector('[data-detail="qty-minus"]');
-          const qtyPlus = document.querySelector('[data-detail="qty-plus"]');
-
-          if (qtyDisplay && qtyMinus && qtyPlus) {
-            const updateQty = () => {
-              qtyDisplay.textContent = quantity;
-              updateTotal();
-            };
-            qtyMinus.addEventListener('click', () => {
-              if (quantity > 1) { quantity--; updateQty(); }
-            });
-            qtyPlus.addEventListener('click', () => {
-              quantity++; updateQty();
-            });
-          }
-
-          const addBtn = document.querySelector('[data-detail="add-to-cart-btn"]');
-          if (addBtn) {
-            addBtn.setAttribute('data-add-to-cart', '');
-            addBtn.setAttribute('data-product-id', product.id);
-            addBtn.setAttribute('data-product-name', product.name);
-            addBtn.setAttribute('data-product-price', price);
-            addBtn.setAttribute('data-product-unit', unit);
-            addBtn.setAttribute('data-product-category', categoryName);
-            addBtn.setAttribute('data-product-image', product.image || '');
-          }
-        });
-      </script>
+      </div>
     </body>
   </html>
   <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>

@@ -1839,27 +1839,6 @@
             }
           }
         }
-        @media (max-width: 1024px) {
-          .product-detail-grid { grid-template-columns: 1fr !important; }
-          .product-image-col { grid-column: span 12 / span 12 !important; }
-          .product-info-col { grid-column: span 12 / span 12 !important; }
-          .related-grid { grid-template-columns: repeat(2, 1fr) !important; }
-          .footer-grid { grid-template-columns: repeat(2, 1fr) !important; }
-          .navbar-search { width: 100% !important; }
-          .navbar-container { padding-inline: calc(var(--spacing) * 4) !important; }
-          .section-padding { padding-inline: calc(var(--spacing) * 4) !important; padding-block: calc(var(--spacing) * 8) !important; }
-        }
-        input:focus { outline: none !important; }
-        @media (max-width: 768px) {
-          .product-detail-grid { grid-template-columns: 1fr !important; }
-          .product-image-col { grid-column: span 12 / span 12 !important; }
-          .product-info-col { grid-column: span 12 / span 12 !important; }
-          .related-grid { grid-template-columns: 1fr !important; }
-          .footer-grid { grid-template-columns: 1fr !important; }
-          .section-padding { padding-inline: calc(var(--spacing) * 4) !important; padding-block: calc(var(--spacing) * 8) !important; }
-          .navbar-links { display: none !important; }
-          .navbar-search { width: 100% !important; }
-        }
       </style>
       <link
         rel="preload"
@@ -1915,232 +1894,71 @@
               class="block animate-pulse size-[14px]"
               style="font-size: 14px"
             ></iconify-icon
-            ><span
-              ><span
-                >PREÇO TRANSPARENTE: Todos os preços incluem taxa de serviço,
-                compra, entrega e margem. Sem surpresas na entrega!</span
-              ></span
-            >
-          </div>
-          <div
-            class="w-full py-4 px-8 flex items-center justify-between bg-market-clay text-white border-b border-market-clay/10 navbar-container"
-          >
-            <div class="flex items-center gap-8">
-              <a
-                href="index.html"
-                class="flex items-center gap-3"
-                data-media-type="banani-button"
-                ><div
-                  class="size-10 rounded-full flex items-center justify-center font-bold text-lg bg-market-yellow text-market-dark"
-                >
-                  <span>FD</span>
-                </div>
-                <span
-                  class="font-headings font-extrabold text-xl tracking-tight"
-                  ><span>Fefa Delivery</span></span
-                ></a
-              >
-              <nav
-                class="hidden md:flex items-center gap-6 font-medium text-sm navbar-links"
-              >
-                <a
-                  class="text-white/90 hover:text-white"
-                  data-media-type="banani-button"
-                  href="index.html"
-                  ><span>Mercado do 30</span></a
-                ><a
-                  class="text-white/90 hover:text-white"
-                  data-media-type="banani-button"
-                  href="entregas.html"
-                  ><span>Como Funciona</span></a
-                ><a
-                  class="text-white/90 hover:text-white"
-                  data-media-type="banani-button"
-                  href="categorias.html"
-                  ><span>Categorias</span></a
-                ><a
-                  class="text-white/90 hover:text-white"
-                  data-media-type="banani-button"
-                  href="precos.html"
-                  ><span>Preços</span></a
-                >
-              </nav>
-            </div>
-            <div class="flex items-center gap-6">
-              <div
-                class="rounded-full px-4 py-1.5 flex items-center gap-2 w-80 text-sm bg-white/10 text-white placeholder-white/60 border border-white/20 navbar-search"
-              >
-                <iconify-icon
-                  icon="lucide:search"
-                  class="block size-[16px]"
-                  style="font-size: 16px"
-                ></iconify-icon>
-                <input
-                  type="text"
-                  placeholder="O que procuras do Mercado do 30?"
-                  class="bg-transparent outline-none w-full text-white placeholder-white/60 text-sm"
-                />
-              </div>
-              <a
-                href="carrinho.html"
-                class="flex items-center gap-2 relative"
-                data-media-type="banani-button"
-              >
-                <iconify-icon
-                  icon="lucide:shopping-bag"
-                  class="block size-[20px]"
-                  style="font-size: 20px"
-                ></iconify-icon
-                ><span
-                  data-cart-badge
-                  class="absolute -top-1 -right-1 bg-market-yellow text-market-dark text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center"
-                  ><span>3</span></span
-                ></a
-              >              <a
-                href="login.html"
-                class="bg-market-yellow text-market-dark font-semibold px-4 py-2 rounded-lg flex items-center gap-2"
-                data-media-type="banani-button"
-              >
-                <iconify-icon
-                  icon="lucide:user"
-                  class="block size-[16px]"
-                  style="font-size: 16px"
-                ></iconify-icon
-                ><span><span>Minha Conta</span></span>
-              </a>
-            </div>
-          </div>
-          <div class="max-w-7xl mx-auto px-12 py-12 section-padding">
-            <!-- BREADCRUMB -->
-            <div class="flex items-center gap-2 text-xs text-muted-foreground mb-8">
-              <a href="index.html" class="hover:underline"><span>Início</span></a>
-              <iconify-icon icon="lucide:chevron-right" class="block size-[12px]"></iconify-icon>
-              <a href="categorias.html" class="hover:underline"><span>Categorias</span></a>
-              <iconify-icon icon="lucide:chevron-right" class="block size-[12px]"></iconify-icon>
-              <span class="hover:underline"><span data-detail="breadcrumb-category">Produtos da Terra</span></span>
-              <iconify-icon icon="lucide:chevron-right" class="block size-[12px]"></iconify-icon>
-              <span class="text-market-clay font-bold"><span data-detail="breadcrumb-name">Mandioca Fresca do Bengo</span></span>
-            </div>
-            
-            <!-- MAIN PRODUCT GRID -->
-            <div class="grid grid-cols-12 gap-12 bg-white p-8 rounded-3xl border border-market-clay/10 shadow-sm items-start mb-16 product-detail-grid">
-              <!-- IMAGES COLUMN -->
-              <div class="col-span-6 flex flex-col gap-4 product-image-col">
-                <div class="rounded-2xl overflow-hidden border-2 border-market-cream shadow-md">
-                  <img data-detail="main-image" data-aspect-ratio="4:3" style="aspect-ratio: 4/3" 
-                    src="https://storage.googleapis.com/banani-generated-images/generated-images/648069cc-df93-4603-85d2-840e26601007.jpg" 
-                    class="w-full object-cover" />
-                </div>
-                <div class="grid grid-cols-3 gap-4">
-                  <div class="rounded-xl overflow-hidden border border-market-clay/15">
-                    <img data-aspect-ratio="1:1" style="aspect-ratio: 1/1"
-                      src="https://storage.googleapis.com/banani-generated-images/generated-images/108c4f7a-e017-42a2-a808-abb9a74130fb.jpg"
-                      class="w-full object-cover" />
-                  </div>
-                  <div class="rounded-xl overflow-hidden border border-market-clay/15">
-                    <img data-aspect-ratio="1:1" style="aspect-ratio: 1/1"
-                      src="https://storage.googleapis.com/banani-generated-images/generated-images/db6b14e0-fa9c-47b3-bfb6-876907dfa55c.jpg"
-                      class="w-full h-full object-cover" />
-                  </div>
-                  <div class="rounded-xl overflow-hidden border border-market-clay/15">
-                    <img data-aspect-ratio="1:1" style="aspect-ratio: 1/1"
-                      src="https://storage.googleapis.com/banani-generated-images/generated-images/7fdc6930-757d-4297-9d82-66996937cc6e.jpg"
-                      class="w-full h-full object-cover" />
-                  </div>
-                </div>
-              </div>
-              
-              <!-- PRODUCT INFO COLUMN -->
-              <div class="col-span-6 flex flex-col gap-6 product-info-col">
-                <div>
-                  <span class="text-xs font-bold text-market-clay uppercase tracking-widest">
-                    <span data-detail="category-badge">PRODUTO DA TERRA • BENGO</span>
-                  </span>
-                  <h1 class="font-headings font-black text-3xl text-market-dark mt-1">
-                    <span data-detail="product-name">Mandioca Fresca do Bengo</span>
-                  </h1>
-                  <p class="text-xs text-emerald-600 font-bold mt-1.5 flex items-center gap-1">
-                    <span class="size-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span data-detail="availability">Colhida hoje de madrugada • Disponível no Mercado do 30</span>
-                  </p>
-                </div>
-                
-                <!-- PRICE BOX -->
-                <div class="bg-market-cream/40 p-5 rounded-2xl border border-market-clay/10">
-                  <div class="flex items-baseline gap-2">
-                    <span class="font-headings font-black text-3xl text-market-clay">
-                      <span data-detail="product-price">1.800 Kz</span>
-                    </span>
-                    <span class="text-sm text-muted-foreground font-bold">
-                      <span data-detail="product-unit">/ Kg</span>
-                    </span>
-                  </div>
-                  <div class="flex items-center gap-1.5 text-xs text-muted-foreground mt-2 border-t border-market-clay/10 pt-3">
-                    <iconify-icon icon="lucide:shield-check" class="block text-emerald-600 size-[14px]"></iconify-icon>
-                    <span>Preço Integrado: sem taxas adicionais de entrega ou serviço no checkout.</span>
-                  </div>
-                </div>
-                
-                <!-- PREPARATION OPTIONS -->
-                <div>
-                  <span class="text-xs font-bold text-market-dark/80 block mb-2">Como prefere a sua Mandioca?</span>
-                  <div class="grid grid-cols-3 gap-3">
-                    <button class="border-2 border-market-clay bg-market-clay-light/20 p-3 rounded-xl text-center">
-                      <span class="block text-xs font-bold text-market-clay">Inteira com Casca</span>
-                      <span class="text-[10px] text-muted-foreground">Mais durabilidade</span>
-                    </button>
-                    <button class="border border-market-clay/15 p-3 rounded-xl text-center bg-white">
-                      <span class="block text-xs font-bold text-market-dark">Descascada</span>
-                      <span class="text-[10px] text-muted-foreground">Pronta a cozinhar</span>
-                    </button>
-                    <button class="border border-market-clay/15 p-3 rounded-xl text-center bg-white">
-                      <span class="block text-xs font-bold text-market-dark">Cortada em Cubos</span>
-                      <span class="text-[10px] text-muted-foreground">No saco térmico</span>
+                      ><span
+                        ><span data-file="/screens/new_screen3.jsx" data-idx="22"
+                          data-detail="add-to-cart-text"
+                          >Adicionar à Cesta (3.600 Kz)</span
+                        ></span
+                      >
                     </button>
                   </div>
                 </div>
-                
-                <!-- QUANTITY + ADD TO CART -->
-                <div class="flex items-center gap-4">
-                  <div class="flex flex-col gap-1">
-                    <span class="text-[11px] font-bold text-muted-foreground">Quantidade:</span>
-                    <div class="border border-market-clay/15 rounded-xl p-2.5 flex items-center gap-4 bg-market-cream/30">
-                      <button data-detail="qty-minus" class="size-6 rounded-lg bg-white flex items-center justify-center font-bold text-market-clay hover:bg-market-clay-light">-</button>
-                      <span class="font-bold text-sm text-market-dark w-6 text-center"><span data-detail="quantity">1</span></span>
-                      <button data-detail="qty-plus" class="size-6 rounded-lg bg-white flex items-center justify-center font-bold text-market-clay hover:bg-market-clay-light">+</button>
-                    </div>
-                  </div>
-                  <div class="flex-1 flex flex-col gap-1">
-                    <span class="text-[11px] text-transparent">Ação</span>
-                    <button data-detail="add-to-cart-btn" class="w-full bg-market-clay text-white font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-md">
-                      <iconify-icon icon="lucide:shopping-cart" class="block size-[16px]"></iconify-icon>
-                      <span><span data-detail="add-to-cart-text">Adicionar à Cesta (1.800 Kz)</span></span>
-                    </button>
-                  </div>
-                </div>
-                
-                <!-- PRODUCT DETAILS -->
                 <div class="border-t border-market-clay/10 pt-4 space-y-3">
                   <div>
-                    <h4 class="text-xs font-bold text-market-dark">Sobre este produto:</h4>
-                    <p class="text-xs text-muted-foreground leading-relaxed mt-1">
-                      <span data-detail="description">A mandioca do Bengo é famosa pela sua cozedura rápida e textura incrivelmente macia ("mandioca que se desfaz"). É perfeita para acompanhar peixe Cacusso grelhado, fazer bombó frito, ou preparar fuba fresca de alta qualidade.</span>
+                    <h4 class="text-xs font-bold text-market-dark">
+                      <span data-file="/screens/new_screen3.jsx" data-idx="23"
+                        >Sobre este produto:</span
+                      >
+                    </h4>
+                    <p
+                      class="text-xs text-muted-foreground leading-relaxed mt-1"
+                    >
+                      <span data-file="/screens/new_screen3.jsx" data-idx="24"
+                        data-detail="description"
+                        >A mandioca do Bengo é famosa pela sua cozedura rápida e
+                        textura incrivelmente macia ("mandioca que se desfaz").
+                        É perfeita para acompanhar peixe Cacusso grelhado, fazer
+                        bombó frito, ou preparar fuba fresca de alta
+                        qualidade.</span
+                      >
                     </p>
                   </div>
                   <div class="grid grid-cols-2 gap-4 text-xs pt-2">
                     <div>
-                      <span class="text-muted-foreground block">Origem:</span>
-                      <span class="font-bold"><span data-detail="origin">Caxito, Província do Bengo</span></span>
+                      <span class="text-muted-foreground block"
+                        ><span
+                          data-file="/screens/new_screen3.jsx"
+                          data-idx="25"
+                          >Origem:</span
+                        ></span
+                      ><span class="font-bold"
+                        ><span
+                          data-file="/screens/new_screen3.jsx"
+                          data-idx="26"
+                          data-detail="origin"
+                          >Caxito, Província do Bengo</span
+                        ></span
+                      >
                     </div>
                     <div>
-                      <span class="text-muted-foreground block">Tipo de Cultivo:</span>
-                      <span class="font-bold">100% Tradicional / Familiar</span>
+                      <span class="text-muted-foreground block"
+                        ><span
+                          data-file="/screens/new_screen3.jsx"
+                          data-idx="27"
+                          >Tipo de Cultivo:</span
+                        ></span
+                      ><span class="font-bold"
+                        ><span
+                          data-file="/screens/new_screen3.jsx"
+                          data-idx="28"
+                          >100% Tradicional / Familiar</span
+                        ></span
+                      >
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="mb-8">
               <h3
                 class="font-headings font-extrabold text-2xl text-market-dark"
@@ -2156,7 +1974,7 @@
                 >
               </p>
             </div>
-            <div class="grid grid-cols-4 gap-6 related-grid">
+            <div class="grid grid-cols-4 gap-6">
               <div
                 class="p-4 flex flex-col justify-between border border-market-clay/10 bg-white rounded-2xl shadow-sm relative"
               >
@@ -2531,7 +2349,7 @@
         <footer
           class="w-full py-12 px-8 bg-market-dark text-white/90 border-t border-white/10"
         >
-          <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 footer-grid">
+          <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 class="font-headings font-extrabold text-xl mb-4">
                 <span data-file="/screens/new_screen3.jsx" data-idx="47"

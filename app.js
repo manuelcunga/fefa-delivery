@@ -1,13 +1,14 @@
  const JosefaApp = {
    cart: [],
    
-   init() {
-     this.injectGlobalStyles();
-     this.loadCart();
-     this.updateCartBadge();
-     this.bindEvents();
-     this.highlightCurrentPage();
-   },
+    init() {
+      this.injectGlobalStyles();
+      this.loadCart();
+      this.updateCartBadge();
+      this.bindEvents();
+      this.highlightCurrentPage();
+      this.setupMobileNav();
+    },
    
    injectGlobalStyles() {
      if (document.getElementById('josefa-global-styles')) return;
